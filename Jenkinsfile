@@ -1,6 +1,6 @@
 pipeline {
     // Assign the label 'windows' to the Windows node that will run this job.
-    agent any
+    agent { label 'windows' }
     options {
         skipDefaultCheckout(true)
         disableConcurrentBuilds()
